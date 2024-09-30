@@ -90,14 +90,13 @@ def main():
     service = get_gmail_service()
     user_id = 'me'  # 'me' represents the authenticated user
     
-    # Example whitelist of senders
-    whitelist = ['studentlife@stonybrook.edu']  # Add specific emails or domains here
     
     # Example usage: delete all emails from a specific sender
-    delete_emails(service, user_id, keywords = ['steam wishlist'])
+    delete_emails(service, user_id, keywords = [''], senderWhitelist=[''])
 
 if __name__ == '__main__':
     main()
     #need to create gui
     #need to add whitelist of keywords
     #need to add sentiment analysis
+
